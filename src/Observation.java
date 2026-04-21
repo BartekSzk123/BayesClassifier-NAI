@@ -1,8 +1,10 @@
+import java.util.Map;
+
 public class Observation {
     private String type;
-    private String[] attributes;
+    private Map<String,String> attributes;
 
-    public Observation(String type, String[] attributes) {
+    public Observation(String type, Map<String,String> attributes) {
         this.type = type;
         this.attributes = attributes;
     }
@@ -11,7 +13,7 @@ public class Observation {
         return type;
     }
 
-    public String[] getAttributes() {
+    public Map<String, String> getAttributes() {
         return attributes;
     }
 }
